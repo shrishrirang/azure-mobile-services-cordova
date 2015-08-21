@@ -31,6 +31,9 @@
         <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
             <runs />
         </js-module>
+        <js-module src="www/MobileServiceSQLiteStore.js">
+          <runs />
+        </js-module>
     </platform>
 
     <platform name="wp8">
