@@ -26,7 +26,7 @@
     </platform>
 
     <platform name="windows">
-        <js-module src="www/MobileServices.Cordova.Ext.js" name="AzureMobileServices.Ext">
+        <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
         <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
