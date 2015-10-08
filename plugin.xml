@@ -14,18 +14,19 @@
     <issue>https://github.com/azure/azure-mobile-services/issues</issue>
 
     <dependency id="org.apache.cordova.inappbrowser"/>
+    <dependency id="io.litehelpers.cordova.sqlite"/>
 
     <platform name="windows8">
         <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
-        <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
+        <js-module src="www/MobileServices.Cordova.js" name="AzureMobileServices">
             <runs />
         </js-module>
     </platform>
 
     <platform name="windows">
-        <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
+        <js-module src="www/MobileServices.Cordova.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
         <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
@@ -37,7 +38,7 @@
         <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
-        <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
+        <js-module src="www/MobileServices.Cordova.js" name="AzureMobileServices">
             <runs />
         </js-module>
     </platform>
@@ -46,7 +47,7 @@
         <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
-        <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
+        <js-module src="www/MobileServices.Cordova.js" name="AzureMobileServices">
             <runs />
         </js-module>
     </platform>
@@ -55,7 +56,7 @@
         <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
-        <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
+        <js-module src="www/MobileServices.Cordova.js" name="AzureMobileServices">
             <runs />
         </js-module>
     </platform>
