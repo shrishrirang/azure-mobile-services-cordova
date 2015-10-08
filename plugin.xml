@@ -29,7 +29,7 @@
         <js-module src="www/MobileServices.Web.Ext.js" name="AzureMobileServices.Ext">
             <runs />
         </js-module>
-        <js-module src="www/MobileServices.Web.js" name="AzureMobileServices">
+        <js-module src="www/MobileServices.Cordova.js" name="AzureMobileServices">
             <runs />
         </js-module>
     </platform>
