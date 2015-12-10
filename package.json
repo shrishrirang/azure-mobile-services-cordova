@@ -41,10 +41,9 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-copy": "~0.8.1",
-    "grunt-exec": "^0.4.6"
+    "grunt-contrib-copy": "~0.8.1"
   },
   "dependencies": {
-    "azure-mobile-apps-js-client": "git://github.com/shrishrirang/azure-mobile-apps-js-client-1.git#npm"
+    "azure-mobile-apps-js-client": "shrishrirang/azure-mobile-apps-js-client-1#npm"
   }
 }

@@ -4,12 +4,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    exec: {
-        main: {
-            cwd: __dirname + '/node_modules/azure-mobile-apps-js-client',
-            cmd: 'npm run build'
-        }
-    },
     copy: {
         main: {
             cwd: __dirname,
@@ -20,8 +14,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-exec');
 
   // Default task(s).
-  grunt.registerTask('default', ['exec', 'copy']);
+  grunt.registerTask('default', ['copy']);
 };
