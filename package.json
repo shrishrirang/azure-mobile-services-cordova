@@ -37,7 +37,7 @@
   "author": "Microsoft",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "npm install && grunt"
+    "postinstall": "grunt"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
