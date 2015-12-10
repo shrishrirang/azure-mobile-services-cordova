@@ -20,6 +20,13 @@ The following code creates a new client object to access the *todolist* mobile s
 
     var todoTable = mobileService.getTable('TodoItem');
 
+## Build ##
+1. Install the azure-mobile-apps-js-client npm package as follows:
+- To install a published npm package: npm install azure-mobile-apps-js-client (This will not work currently as this hasn't been published yet)
+- To install the npm package from GitHub: npm install https://github.com/shrishrirang/azure-mobile-apps-js-client-1#npm (TODO: This is a temporary path till the changes are not in the azure/azure-mobile-apps-js-client repo)
+
+2. Run 'npm run build'
+    
 ## Need Help?
 
 Be sure to check out the Mobile Services [Developer Forum](http://social.msdn.microsoft.com/Forums/en-US/azuremobile/) if you are having trouble. The Mobile Services product team actively monitors the forum and will be more than happy to assist you.
