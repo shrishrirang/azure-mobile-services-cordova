@@ -4,10 +4,10 @@
  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 -->
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="com.microsoft.azure-mobile-services"
+           id="cordova-plugin-ms-azure-mobile-apps"
       version="2.0.0-beta.3">
-    <name>Windows Azure Mobile Services</name>
-    <description>Exposes JavaScript api to access an Azure Mobile Apps instance</description>
+    <name>Azure Mobile Apps</name>
+    <description>This library enables you to develop scalable and secure cordova mobile apps hosted in Microsoft Azure. You can incorporate structured storage, user authentication and push notifications in minutes. For more information, check out http://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-value-prop-preview</description>
     <license>Apache 2.0</license>
     <keywords>azure, services, zumo, cloud</keywords>
     <repo>https://github.com/azure/azure-mobile-services-cordova/</repo>
