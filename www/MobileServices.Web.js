@@ -1,10 +1,10 @@
 // ----------------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation. All rights reserved
-// AzureMobileServices - v2.0.30430.0-beta
+// AzureMobileServices - v2.0.0-beta
 // ----------------------------------------------------------------------------
 
 (function (global) {
-	var $__fileVersion__ = '2.0.30430.0-beta';
+	var $__fileVersion__ = '2.0.0-beta';
     /// <field name="$__modules__">
     /// Map module names to either their cached exports or a function which
     /// will define the module's exports when invoked.
@@ -43,28 +43,6 @@
 
 	$__modules__.Resources = { };
 
-	$__modules__.Resources['de-DE'] = {
-		    "Validate_NotNullError"                                 : "{0} darf nicht null sein.",
-		    "Validate_NotNullOrEmptyError"                          : "{0} darf nicht null oder leer sein.",
-		    "Validate_InvalidId"                                    : "\"{0}\" ist ungültig.",
-		    "Validate_TypeCheckError"                               : "Es wird erwartet, dass {0} ein Wert vom Typ {1} und nicht {2} ist.",
-		    "Validate_LengthUnexpected"                             : "Es wird erwartet, dass {0} die Länge {1} und nicht {2} aufweist.",
-		    "Validate_InvalidUserParameter"                         : "{0} enthält einen ungültigen benutzerdefinierten Abfragezeichenfolge-Parameter: {1}. Benutzerdefinierte Abfragezeichenfolge-Parameter dürfen nicht mit '$' beginnen.",
-		    "Extensions_DefaultErrorMessage"                        : "Unerwarteter Fehler.",
-		    "Extensions_ConnectionFailureMessage"                   : "Unerwarteter Verbindungsfehler.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "Die Ergebnisse einer Abfrage für die Tabelle '{1}' können nicht über die Tabelle '{0}' abgerufen werden.",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "Der Einfügevorgang kann nicht erfolgen, wenn das Element '{0}'bereits festgelegt ist.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "Nicht unterstützter Authentifizierungsanbietername. Bitte geben Sie einen Namen {0} an.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "Es kann kein Anmeldevorgang gestartet werden, weil aktuell bereits eine Anmeldung ausgeführt wird.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "Ungültiges Format der Authentifizierungsantwort.",
-		    "MobileServiceLogin_InvalidProvider"                    : "Der erste Parameter muss der Name des Authentifizierungsanbieters oder ein Authentifizierungstoken eines Microsoft-Kontos sein.",
-		    "MobileServiceTable_NotSingleObject"                    : "Das Objekt konnte nicht aus der Antwort {0} abgerufen werden.",
-		    "Push_ConflictWithReservedName"                         : "Der Vorlagenname verursacht einen Konflikt mit dem reservierten Namen '{0}'.",
-		    "Push_InvalidTemplateName"                              : "Der Vorlagenname darf nicht das Zeichen \";\" oder \":\" enthalten.",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "\"bodyTemplate\" weist kein zulässiges XML-Format auf. Der erste Knoten von \"bodyTemplate\" sollte ein Badge, eine Kachel oder ein Popup sein. Dies gilt nicht für eine wns\/raw-Vorlage, die aus gültigem XML bestehen muss.",
-		    "Push_BodyTemplateMustBeXml"                            : "Gültiges XML ist für jede Vorlage ohne einen formatierten Header erforderlich.",
-		    "Push_TagNoCommas"                                      : "Tags dürfen nicht das Zeichen \",\" enthalten."
-		};
 	$__modules__.Resources['en-US'] = {
 		    "Validate_NotNullError"                                 : "{0} cannot be null.",
 		    "Validate_NotNullOrEmptyError"                          : "{0} cannot be null or empty.",
@@ -85,184 +63,8 @@
 		    "Push_InvalidTemplateName"                              : "Template name can't contain ';' or ':'.",
 		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "The bodyTemplate is not in accepted XML format. The first node of the bodyTemplate should be Badge\/Tile\/Toast, except for the wns\/raw template, which need to be a valid XML.",
 		    "Push_BodyTemplateMustBeXml"                            : "Valid XML is required for any template without a raw header.",
-		    "Push_TagNoCommas"                                      : "Tags must not contain ','."
-		};
-	$__modules__.Resources['es-ES'] = {
-		    "Validate_NotNullError"                                 : "{0} no puede ser nulo.",
-		    "Validate_NotNullOrEmptyError"                          : "{0} no puede ser nulo ni estar vacío.",
-		    "Validate_InvalidId"                                    : "{0} no es válido.",
-		    "Validate_TypeCheckError"                               : "Se espera que {0} sea un valor del tipo {1}, no {2}.",
-		    "Validate_LengthUnexpected"                             : "Se espera que {0} tenga una longitud {1}, no {2}.",
-		    "Validate_InvalidUserParameter"                         : "{0} contiene un parámetro de cadena de consulta definido por el usuario: {1}. Los parámetros de cadena de consulta definidos por el usuario no deben comenzar por '$'.",
-		    "Extensions_DefaultErrorMessage"                        : "Error inesperado.",
-		    "Extensions_ConnectionFailureMessage"                   : "Error de conexión inesperado.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "No se pueden obtener los resultados de una consulta para la tabla '{1}' mediante la tabla '{0}'.",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "No se puede insertar si el miembro {0} ya se ha establecido.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "Nombre de proveedor de autenticación no admitido. Especifique uno de {0}.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "No se puede iniciar una operación de inicio de sesión porque el inicio de sesión ya está en curso.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "Formato no válido de la respuesta de autenticación.",
-		    "MobileServiceLogin_InvalidProvider"                    : "El primer parámetro debe ser el nombre del proveedor de autenticación o un token de autenticación de la cuenta Microsoft.",
-		    "MobileServiceTable_NotSingleObject"                    : "No se puede obtener el objeto de la respuesta {0}.",
-		    "Push_ConflictWithReservedName"                         : "El nombre de la plantilla entra en conflicto con el nombre reservado '{0}'.",
-		    "Push_InvalidTemplateName"                              : "El nombre de la plantilla no puede contener ';' ni ':'.",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "El objeto bodyTemplate no es un formato XML aceptado. El primer nodo del objeto bodyTemplate debe ser Badge\/Tile\/Toast, excepto para la plantilla wns o sin formato, que debe tener un formato XML válido.",
-		    "Push_BodyTemplateMustBeXml"                            : "Se requiere XML válido para todas las plantillas sin encabezado sin formato.",
-		    "Push_TagNoCommas"                                      : "Las etiquetas no deben contener ','."
-		};
-	$__modules__.Resources['fr-FR'] = {
-		    "Validate_NotNullError"                                 : "{0} ne peut pas avoir une valeur null.",
-		    "Validate_NotNullOrEmptyError"                          : "{0} ne peut pas avoir une valeur null ou être vide.",
-		    "Validate_InvalidId"                                    : "{0} n’est pas valide.",
-		    "Validate_TypeCheckError"                               : "{0} doit être une valeur de type {1}, et non {2}.",
-		    "Validate_LengthUnexpected"                             : "{0} doit avoir une longueur de {1}, et non {2}.",
-		    "Validate_InvalidUserParameter"                         : "{0} contient un paramètre de chaîne de requête défini par l’utilisateur non valide : {1}. Les paramètres de chaîne de requête définis par l’utilisateur ne doivent pas commencer par « $ ».",
-		    "Extensions_DefaultErrorMessage"                        : "Échec inattendu.",
-		    "Extensions_ConnectionFailureMessage"                   : "Échec de connexion inattendu.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "Impossible d’obtenir les résultats d’une requête pour la table « {1} » via la table « {0} ».",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "Insertion impossible si le membre {0} est déjà défini.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "Le nom du fournisseur d’authentification n’est pas pris en charge. Veuillez en spécifier un de {0}.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "Impossible de démarrer une opération d’ouverture de session, car une ouverture de session est déjà en cours.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "Le format de la réponse d’authentification n’est pas valide.",
-		    "MobileServiceLogin_InvalidProvider"                    : "Le premier paramètre doit correspondre au nom du fournisseur d’autentification ou à un jeton d’authentification de compte Microsoft.",
-		    "MobileServiceTable_NotSingleObject"                    : "Impossible d’obtenir un objet de la réponse {0}.",
-		    "Push_ConflictWithReservedName"                         : "Le nom de modèle entre en conflit avec le nom réservé '{0}'.",
-		    "Push_InvalidTemplateName"                              : "Le nom du modèle ne peut contenir ni ';' ni ':'.",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "Le bodyTemplate n'est pas dans un format XML accepté. Le premier nœud de bodyTemplate doit être Badge\/Tile\/Toast, sauf le modèle wns\/raw, qui doit être un XML valide.",
-		    "Push_BodyTemplateMustBeXml"                            : "XML valide est nécessaire pour tout modèle sans un en-tête brut.",
-		    "Push_TagNoCommas"                                      : "Les balises ne doivent pas contenir ','."
-		}
-		;
-	$__modules__.Resources['it-IT'] = {
-		    "Validate_NotNullError"                                 : "{0} non può essere null.",
-		    "Validate_NotNullOrEmptyError"                          : "{0} non può essere null o vuoto.",
-		    "Validate_InvalidId"                                    : "{0} non valido.",
-		    "Validate_TypeCheckError"                               : "{0} deve essere un valore di tipo {1}, non {2}.",
-		    "Validate_LengthUnexpected"                             : "{0} deve avere una lunghezza {1}, non {2}.",
-		    "Validate_InvalidUserParameter"                         : "{0} contiene un parametro di stringa di query definito dall'utente non valido: {1}. Questi parametri non devono iniziare con '$'.",
-		    "Extensions_DefaultErrorMessage"                        : "Errore imprevisto.",
-		    "Extensions_ConnectionFailureMessage"                   : "Errore di connessione imprevisto.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "Impossibile ottenere i risultati di una query per la tabella '{1}' tramite la tabella '{0}'.",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "Impossibile eseguire l'inserimento se il membro {0} è già impostato.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "Nome provider di autenticazione non supportato. Specificare un nome di {0}.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "Impossibile avviare l'accesso perché l'operazione è già in corso.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "Formato della risposta di autenticazione non valido.",
-		    "MobileServiceLogin_InvalidProvider"                    : "Il primo parametro deve essere il nome di un provider di autenticazione o un token di autenticazione dell'account Microsoft.",
-		    "MobileServiceTable_NotSingleObject"                    : "Impossibile ottenere un oggetto dalla risposta {0}.",
-		    "Push_ConflictWithReservedName"                         : "Nome modello in conflitto con il nome riservato '{0}'.",
-		    "Push_InvalidTemplateName"                              : "Il nome modello non può contenere ';' o ':'.",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "Formato XML di bodyTemplate non accettato. Il primo nodo di bodyTemplate deve essere Badge\/Tile\/Toast, ad eccezione del modello wns\/raw, che devono essere in formato XML valido.",
-		    "Push_BodyTemplateMustBeXml"                            : "Per i modelli che non dispongono di un'intestazione non elaborata è necessario un XML valido.",
-		    "Push_TagNoCommas"                                      : "I tag non devono contenere ','."
-		};
-	$__modules__.Resources['ja-JP'] = {
-		    "Validate_NotNullError"                                 : "{0} を null にすることはできません。",
-		    "Validate_NotNullOrEmptyError"                          : "{0} を null または空にすることはできません。",
-		    "Validate_InvalidId"                                    : "{0} は無効です。",
-		    "Validate_TypeCheckError"                               : "{0} は、{2} ではなく型 {1} の値であることが想定されています。",
-		    "Validate_LengthUnexpected"                             : "{0} は、{2} ではなく長さ {1} であることが想定されています。",
-		    "Validate_InvalidUserParameter"                         : "{0} には無効なユーザー定義クエリ文字列パラメーター {1} が含まれています。ユーザー定義クエリ文字列パラメーターの先頭を '$' にすることはできません。",
-		    "Extensions_DefaultErrorMessage"                        : "予期しないエラー。",
-		    "Extensions_ConnectionFailureMessage"                   : "予期しない接続エラー。",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "テーブル '{0}' を介してテーブル '{1}' のクエリの結果を取得することはできません。",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "{0} メンバーが既に設定されている場合は、挿入できません。",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "サポートされていない認証プロバイダーの名前です。{0} のいずれかを指定してください。",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "ログインが既に進行中であるため、ログイン処理を開始できません。",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "認証の応答の形式が正しくありません。",
-		    "MobileServiceLogin_InvalidProvider"                    : "最初のパラメーターは、認証プロバイダーまたは Microsoft アカウントの認証トークンの名前である必要があります。",
-		    "MobileServiceTable_NotSingleObject"                    : "応答 {0} からオブジェクトを取得できません。",
-		    "Push_ConflictWithReservedName"                         : "テンプレート名が予約された名前 '{0}' と競合します。",
-		    "Push_InvalidTemplateName"                              : "テンプレート名に \";\" または \":\" を含めることはできません。",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "bodyTemplate は許可される XML 形式ではありません。有効な XML である必要がある wns\/raw テンプレートを除き、bodyTemplate の最初のノードは Badge\/Tile\/Toast である必要があります。",
-		    "Push_BodyTemplateMustBeXml"                            : "生のヘッダーのないテンプレートには、有効な XML が必要です。",
-		    "Push_TagNoCommas"                                      : "タグに ',' を含めることはできません。"
-		};
-	$__modules__.Resources['ko-KR'] = {
-		    "Validate_NotNullError"                                 : "{0}은(는) null일 수 없습니다.",
-		    "Validate_NotNullOrEmptyError"                          : "{0}은(는) null이거나 비어 있을 수 없습니다.",
-		    "Validate_InvalidId"                                    : "{0}이(가) 잘못되었습니다.",
-		    "Validate_TypeCheckError"                               : "{0}은(는) {2}이(가) 아닌 유형 {1}의 값이어야 합니다.",
-		    "Validate_LengthUnexpected"                             : "{0}에는 {2}이(가) 아닌 길이 {1}이(가) 필요합니다.",
-		    "Validate_InvalidUserParameter"                         : "{0}에 잘못된 사용자 정의 쿼리 문자열 매개 변수 {1}이(가) 포함됩니다. 사용자 정의 쿼리 문자열 매개 변수는 '$'로 시작할 수 없습니다.",
-		    "Extensions_DefaultErrorMessage"                        : "예상치 못한 오류입니다.",
-		    "Extensions_ConnectionFailureMessage"                   : "예상치 못한 연결 오류입니다.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "테이블 '{0}'을(를) 통해 테이블 '{1}'의 쿼리 결과를 가져올 수 없습니다.",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "구성원 {0}이(가) 이미 설정된 경우에는 삽입할 수 없습니다.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "지원되지 않는 인증 공급자 이름입니다. {0} 중 하나를 지정하십시오.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "로그인이 이미 진행 중이므로 로그인 작업을 시작할 수 없습니다.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "잘못된 형식의 인증 응답입니다.",
-		    "MobileServiceLogin_InvalidProvider"                    : "첫 번째 매개 변수는 인증 공급자의 이름이거나 Microsoft 계정 인증 토큰이어야 합니다.",
-		    "MobileServiceTable_NotSingleObject"                    : "응답 {0}에서 개체를 가져올 수 없습니다.",
-		    "Push_ConflictWithReservedName"                         : "템플릿 이름이 예약된 이름 '{0}'과(와) 충돌합니다.",
-		    "Push_InvalidTemplateName"                              : "템플릿 이름에 ';' 또는 ':'을 포함할 수 없습니다.",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "bodyTemplate이 허용되는 XML 형식이 아닙니다. wns\/원시 템플릿을 제외한 bodyTemplate의 첫 번째 노드는 Badge\/Tile\/Toast여야 하며, 이는 올바른 XML이어야 합니다.",
-		    "Push_BodyTemplateMustBeXml"                            : "원시 헤더가 없는 템플릿에 올바른 XML이 필요합니다.",
-		    "Push_TagNoCommas"                                      : "태그에 ','를 포함하지 않아야 합니다."
-		};
-	$__modules__.Resources['ru-RU'] = {
-		    "Validate_NotNullError"                                 : "{0} не может иметь значение NULL.",
-		    "Validate_NotNullOrEmptyError"                          : "{0} не может иметь значение NULL или пустое значение.",
-		    "Validate_InvalidId"                                    : "{0} не является действительным.",
-		    "Validate_TypeCheckError"                               : "Ожидается значение {0} типа {1}, а не {2}.",
-		    "Validate_LengthUnexpected"                             : "Ожидается длина {0}, равная {1}, а не {2}.",
-		    "Validate_InvalidUserParameter"                         : "{0} содержит недопустимый параметр пользовательской строки запроса: {1}. Параметры пользовательской строки запроса не должны начинаться с '$'.",
-		    "Extensions_DefaultErrorMessage"                        : "Непредвиденный сбой.",
-		    "Extensions_ConnectionFailureMessage"                   : "Непредвиденный сбой подключения.",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "Не удается получить результаты запроса таблицы \"{1}\" посредством таблицы \"{0}\".",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "Вставка невозможна, если элемент {0} уже задан.",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "Неподдерживаемое имя поставщика проверки подлинности. Укажите одно из следующих: {0}.",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "Не удается начать операцию входа, так как он уже выполняется.",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "Недопустимый формат ответа проверки подлинности.",
-		    "MobileServiceLogin_InvalidProvider"                    : "Первым параметром должно быть имя поставщика проверки подлинности или маркер проверки подлинности учетной записи Майкрософт.",
-		    "MobileServiceTable_NotSingleObject"                    : "Не удалось получить объект из ответа: {0}.",
-		    "Push_ConflictWithReservedName"                         : "Имя шаблона конфликтует с зарезервированным именем \"{0}\".",
-		    "Push_InvalidTemplateName"                              : "Имя шаблона не может содержать символы \";\" или \":\".",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "Шаблон текста в формате XML не принимается. Первым узлом bodyTemplate должен быть Badge\/Tile\/Toast, за исключением шаблона wns\/raw, который должен быть представлен в действительном формате XML.",
-		    "Push_BodyTemplateMustBeXml"                            : "В заголовке raw любого шаблона должен быть указан допустимый XML.",
-		    "Push_TagNoCommas"                                      : "Теги не должны содержать символ \",\"."
-		};
-	$__modules__.Resources['zh-CN'] = {
-		    "Validate_NotNullError"                                 : "{0} 不能为 Null。",
-		    "Validate_NotNullOrEmptyError"                          : "{0} 不能为 Null 或为空。",
-		    "Validate_InvalidId"                                    : "{0} 无效。",
-		    "Validate_TypeCheckError"                               : "{0} 应为 {1} 类型的值，而不是 {2} 类型的值。",
-		    "Validate_LengthUnexpected"                             : "{0} 的长度应为 {1}，而不是 {2}。",
-		    "Validate_InvalidUserParameter"                         : "{0} 包含无效的用户定义的查询字符串参数: {1}。用户定义的查询字符串参数不能以 \"$\" 开头。",
-		    "Extensions_DefaultErrorMessage"                        : "意外失败。",
-		    "Extensions_ConnectionFailureMessage"                   : "意外的连接失败。",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "无法通过表“{0}”获取表“{1}”的查询结果。",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "如果已设置 {0} 成员，则无法插入。",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "身份验证提供程序名称不受支持。请从 {0} 中指定一个。",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "无法启动登录操作，因为登录已在进行中。",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "身份验证响应的格式无效。",
-		    "MobileServiceLogin_InvalidProvider"                    : "第一个参数必须是身份验证提供程序的名称或 Microsoft 帐户身份验证令牌。",
-		    "MobileServiceTable_NotSingleObject"                    : "无法从响应 {0} 获取对象。",
-		    "Push_ConflictWithReservedName"                         : "模板名称与保留名称“{0}”冲突。",
-		    "Push_InvalidTemplateName"                              : "模板名称不能包含“;”或“:”。",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "bodyTemplate 不是接受的 XML 格式。bodyTemplate 的第一个节点应为 Badge\/Tile\/Toast，但 wns\/raw 模板除外，此模板应为有效的 XML。",
-		    "Push_BodyTemplateMustBeXml"                            : "不含 raw 标头的任何模板都必须为有效的 XML 格式。",
-		    "Push_TagNoCommas"                                      : "标记不得包含“,”。"
-		};
-	$__modules__.Resources['zh-TW'] = {
-		    "Validate_NotNullError"                                 : "{0} 不能為 Null。",
-		    "Validate_NotNullOrEmptyError"                          : "{0} 不能為 Null 或空。",
-		    "Validate_InvalidId"                                    : "{0} 無效。",
-		    "Validate_TypeCheckError"                               : "{0} 預期為類型 {1} 的值，而非 {2}。",
-		    "Validate_LengthUnexpected"                             : "{0} 預期長度為 {1}，而非 {2}。",
-		    "Validate_InvalidUserParameter"                         : "{0} 包含無效的使用者定義查詢字串參數: {1}。使用者定義查詢字串參數不能以 '$' 開頭。",
-		    "Extensions_DefaultErrorMessage"                        : "未預期的失敗。",
-		    "Extensions_ConnectionFailureMessage"                   : "未預期的連線失敗。",
-		    "MobileServiceTable_ReadMismatchedQueryTables"          : "無法透過表格 '{0}' 取得表格 '{1}' 的查詢結果。",
-		    "MobileServiceTable_InsertIdAlreadySet"                 : "如果已設定 {0} 成員，則無法插入。",
-		    "MobileServiceLogin_AuthenticationProviderNotSupported" : "不支援的驗證提供者名稱。請指定其中一個 {0}。",
-		    "MobileServiceLogin_LoginErrorResponse"                 : "無法開始登入作業，因為登入作業已在進行中。",
-		    "MobileServiceLogin_InvalidResponseFormat"              : "無效的驗證回應格式。",
-		    "MobileServiceLogin_InvalidProvider"                    : "第一個參數必須為驗證提供者名稱或 Microsoft 帳戶驗證 Token。",
-		    "MobileServiceTable_NotSingleObject"                    : "無法從回應 {0} 中取得物件。",
-		    "Push_ConflictWithReservedName"                         : "範本名稱與保留的名稱 '{0}' 衝突。",
-		    "Push_InvalidTemplateName"                              : "範本名稱不能包含 ';' 或 ':'。",
-		    "Push_NotSupportedXMLFormatAsBodyTemplateWin8"          : "bodyTemplate 的 XML 格式不受支援。bodyTemplate 的第一個節點應該是 Badge\/Tile\/Toast，wns\/raw 除外，其應該有有有效的 XML。",
-		    "Push_BodyTemplateMustBeXml"                            : "任何沒有原始標頭的範本都需要有效的 XML。",
-		    "Push_TagNoCommas"                                      : "標籤不能包含 ','。"
+		    "Push_TagNoCommas"                                      : "Tags must not contain ','.",
+		    "AlternateLoginHost_Invalid"                            : "{0} is not valid. Expected Absolute Url with https scheme"
 		};
 
 	$__modules__.Extensions = function (exports) {
@@ -776,7 +578,20 @@
 		
 		        var start = url.substring(0, 7).toLowerCase();
 		        return (start  == "http://" || start == "https:/");
+		    },
+		
+		    isHttps: function (url) {
+		        /// <summary>
+		        /// Simple check to verify if url begins with https:/
+		        /// </summary>
+		        if (_.isNullOrEmpty(url)) {
+		            return false;
+		        }
+		
+		        var start = url.substring(0, 7).toLowerCase();
+		        return (start == "https:/");
 		    }
+		
 		};
 		
 		exports.tryParseIsoDateString = function (text) {
@@ -887,25 +702,54 @@
 		    TableReadQuery: "TQ",            // Table reads where the caller uses a function / query OM to determine the items to be returned
 		};
 		var _zumoFeaturesHeaderName = "X-ZUMO-FEATURES";
+		var _zumoApiVersionHeaderName = "ZUMO-API-VERSION";
+		var _zumoApiVersion = "2.0.0";
+		var _alternateLoginHost = null;
+		Object.defineProperties(MobileServiceClient.prototype, {
+		    alternateLoginHost: {
+		        get: function () {
+		            return this._alternateLoginHost;
+		        },
+		        set: function (value) {
+		            if (_.isNullOrEmpty(value)) {
+		                this._alternateLoginHost = this.applicationUrl;
+		            }else if (_.url.isAbsoluteUrl(value) && _.url.isHttps(value)) {
+		                this._alternateLoginHost = value;
+		            } else {
+		                throw _.format(Platform.getResourceString("AlternateLoginHost_Invalid"), value);
+		            }
+		        }
+		    }
+		});
+		var _loginUriPrefix = null;
+		Object.defineProperties(MobileServiceClient.prototype, {
+		    loginUriPrefix: {
+		        get: function () {
+		            return this._loginUriPrefix;
+		        },
+		        set: function (value) {
+		            if (_.isNullOrEmpty(value)) {
+		                this._loginUriPrefix = ".auth/login";
+		            } else {
+		                _.isString(value);
+		                this._loginUriPrefix = value;
+		            }
+		        }
+		    }
+		});
 		
-		function MobileServiceClient(applicationUrl, gatewayUrl, applicationKey) {
+		function MobileServiceClient(applicationUrl) {
 		    /// <summary>
 		    /// Initializes a new instance of the MobileServiceClient class.
 		    /// </summary>
 		    /// <param name="applicationUrl" type="string" mayBeNull="false">
 		    /// The URL to the Mobile Services application.
 		    /// </param>
-		    /// <param name="applicationKey" type="string" mayBeNull="false">
-		    /// The Mobile Service application's key.
-		    /// </param>
 		
 		    Validate.isString(applicationUrl, 'applicationUrl');
 		    Validate.notNullOrEmpty(applicationUrl, 'applicationUrl');
-		    Validate.isString(applicationKey, 'applicationKey');
 		
 		    this.applicationUrl = applicationUrl;
-		    this.applicationKey = applicationKey || null;
-		    this.gatewayUrl = gatewayUrl || null;
 		
 		    var sdkInfo = Platform.getSdkInfo();
 		    var osInfo = Platform.getOperatingSystemInfo();
@@ -935,6 +779,8 @@
 		        this.push = new Push(this, MobileServiceClient._applicationInstallationId);
 		    }
 		}
+		
+		
 		
 		// Export the MobileServiceClient class
 		exports.MobileServiceClient = MobileServiceClient;
@@ -991,7 +837,7 @@
 		    Validate.notNull(serviceFilter, 'serviceFilter');
 		
 		    // Clone the current instance
-		    var client = new MobileServiceClient(this.applicationUrl, this.gatewayUrl, this.applicationKey);
+		    var client = new MobileServiceClient(this.applicationUrl);
 		    client.currentUser = this.currentUser;
 		
 		    // Chain the service filter with any existing filters
@@ -1053,7 +899,7 @@
 		        callback = ignoreFilters;
 		        ignoreFilters = false;
 		    }
-		    
+		
 		    if (_.isNull(callback) && (typeof content === 'function')) {
 		        callback = content;
 		        content = null;
@@ -1079,9 +925,6 @@
 		        _.extend(options.headers, headers);
 		    }
 		    options.headers["X-ZUMO-INSTALLATION-ID"] = MobileServiceClient._applicationInstallationId;
-		    if (!_.isNullOrEmpty(this.applicationKey)) {
-		        options.headers["X-ZUMO-APPLICATION"] = this.applicationKey;
-		    }
 		    if (this.currentUser && !_.isNullOrEmpty(this.currentUser.mobileServiceAuthenticationToken)) {
 		        options.headers["X-ZUMO-AUTH"] = this.currentUser.mobileServiceAuthenticationToken;
 		    }
@@ -1104,7 +947,7 @@
 		            options.data = content;
 		        }
 		
-		        if(!_.hasProperty(options.headers, ['Content-Type','content-type','CONTENT-TYPE','Content-type'])) {
+		        if (!_.hasProperty(options.headers, ['Content-Type', 'content-type', 'CONTENT-TYPE', 'Content-type'])) {
 		            options.headers['Content-Type'] = 'application/json';
 		        }
 		    } else {
@@ -1158,7 +1001,7 @@
 		         /// Optional callback accepting (error, user) parameters.
 		         /// </param>
 		         this._login.loginWithOptions(provider, options, callback);
-		});
+		     });
 		
 		MobileServiceClient.prototype.login = Platform.async(
 		    function (provider, token, useSingleSignOn, callback) {
@@ -1197,7 +1040,7 @@
 		};
 		
 		MobileServiceClient.prototype.invokeApi = Platform.async(
-		    function (apiName, options, callback) {   
+		    function (apiName, options, callback) {
 		        /// <summary>
 		        /// Invokes the specified custom api and returns a response object.
 		        /// </summary>
@@ -1249,6 +1092,11 @@
 		            headers.accept = 'application/json';
 		        }
 		
+		        // Add version header on API requests
+		        if (_.isNull(headers[_zumoApiVersionHeaderName])) {
+		            headers[_zumoApiVersionHeaderName] = _zumoApiVersion;
+		        }
+		
 		        // Construct the URL
 		        var urlFragment = _.url.combinePathSegments("api", apiName);
 		        if (!_.isNull(parameters)) {
@@ -1288,7 +1136,7 @@
 		                    if (!contentType) {
 		                        try {
 		                            response.result = _.fromJson(response.responseText);
-		                        } catch(e) {
+		                        } catch (e) {
 		                            // Do nothing, since we don't know the content-type, failing may be ok
 		                        }
 		                    } else if (contentType.toLowerCase().indexOf('json') !== -1) {
@@ -1359,6 +1207,16 @@
 		/// </summary>
 		MobileServiceClient._zumoFeatures = _zumoFeatures;
 		
+		/// <summary>
+		/// The header / querystring to use to specify the API Version
+		/// </summary>
+		MobileServiceClient._zumoApiVersionHeaderName = _zumoApiVersionHeaderName;
+		
+		/// <summary>
+		/// The current Zumo API Version
+		/// </summary>
+		MobileServiceClient._zumoApiVersion = _zumoApiVersion;
+		
 	};
 
 	$__modules__.MobileServiceTable = function (exports) {
@@ -1393,9 +1251,10 @@
 		};
 		
 		var MobileServiceSystemColumns = {
-		    CreatedAt: "__createdAt",
-		    UpdatedAt: "__updatedAt",
-		    Version: "__version"
+		    CreatedAt: "createdAt",
+		    UpdatedAt: "updatedAt",
+		    Version: "version",
+		    Deleted: "deleted"
 		};
 		
 		Platform.addToMobileServicesClientNamespace({
@@ -1433,8 +1292,6 @@
 		        /// </returns>
 		        return client;
 		    };
-		
-		    this.systemProperties = 0;
 		}
 		
 		// Export the MobileServiceTable class
@@ -1525,7 +1382,6 @@
 		    addQueryParametersFeaturesIfApplicable(features, parameters);
 		
 		    // Add any user-defined query string parameters
-		    parameters = addSystemProperties(parameters, this.systemProperties, queryString);
 		    if (!_.isNull(parameters)) {
 		        var userDefinedQueryString = _.url.getQueryString(parameters);
 		        if (!_.isNullOrEmpty(queryString)) {
@@ -1545,13 +1401,16 @@
 		        }
 		    }
 		
+		    var headers = { };
+		    headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
+		
 		    // Make the request
 		    this.getMobileServiceClient()._request(
 		        'GET',
 		        urlFragment,
 		        null,
 		        false,
-		        null,
+		        headers,
 		        features,
 		        function (error, response) {
 		            var values = null;
@@ -1657,11 +1516,13 @@
 		
 		        // Construct the URL
 		        var urlFragment = _.url.combinePathSegments(tableRouteSeperatorName, this.getTableName());
-		        parameters = addSystemProperties(parameters, this.systemProperties);
 		        if (!_.isNull(parameters)) {
 		            var queryString = _.url.getQueryString(parameters);
 		            urlFragment = _.url.combinePathAndQuery(urlFragment, queryString);
 		        }
+		
+		        var headers = { };
+		        headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
 		
 		        // Make the request
 		        this.getMobileServiceClient()._request(
@@ -1669,7 +1530,7 @@
 		            urlFragment,
 		            instance,
 		            false,
-		            null,
+		            headers,
 		            features,
 		            function (error, response) {
 		                if (!_.isNull(error)) {
@@ -1715,20 +1576,17 @@
 		        }
 		        Validate.notNull(callback, 'callback');
 		
-		        if (_.isString(instance[idPropertyName])) {
-		            version = instance.__version;
-		            serverInstance = removeSystemProperties(instance);
-		        } else {
-		            serverInstance = instance;
-		        }
+		        version = instance[MobileServiceSystemColumns.Version];
+		        serverInstance = removeSystemProperties(instance);
 		
 		        if (!_.isNullOrEmpty(version)) {
 		            headers['If-Match'] = getEtagFromVersion(version);
 		            features.push(WindowsAzure.MobileServiceClient._zumoFeatures.OptimisticConcurrency);
 		        }
 		
+		        headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
+		
 		        features = addQueryParametersFeaturesIfApplicable(features, parameters);
-		        parameters = addSystemProperties(parameters, this.systemProperties);
 		
 		        // Construct the URL
 		        var urlFragment =  _.url.combinePathSegments(
@@ -1819,13 +1677,16 @@
 		        var features = [WindowsAzure.MobileServiceClient._zumoFeatures.TableRefreshCall];
 		        features = addQueryParametersFeaturesIfApplicable(features, parameters);
 		
+		        var headers = { };
+		        headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
+		
 		        // Make the request
 		        this.getMobileServiceClient()._request(
 		            'GET',
 		            urlFragment,
 		            instance,
 		            false,
-		            null,
+		            headers,
 		            features,
 		            function (error, response) {
 		                if (!_.isNull(error)) {
@@ -1885,11 +1746,13 @@
 		
 		        var features = addQueryParametersFeaturesIfApplicable([], parameters);
 		
-		        parameters = addSystemProperties(parameters, this.systemProperties);
 		        if (!_.isNull(parameters)) {
 		            var queryString = _.url.getQueryString(parameters);
 		            urlFragment = _.url.combinePathAndQuery(urlFragment, queryString);
 		        }
+		
+		        var headers = { };
+		        headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
 		
 		        // Make the request
 		        this.getMobileServiceClient()._request(
@@ -1897,7 +1760,7 @@
 		            urlFragment,
 		            null,
 		            false,
-		            null,
+		            headers,
 		            features,
 		            function (error, response) {
 		                if (!_.isNull(error)) {
@@ -1938,15 +1801,15 @@
 		        var headers = {};
 		        var features = [];
 		        if (_.isString(instance[idPropertyName])) {
-		            if (!_.isNullOrEmpty(instance.__version)) {
-		                headers['If-Match'] = getEtagFromVersion(instance.__version);
+		            if (!_.isNullOrEmpty(instance[MobileServiceSystemColumns.Version])) {
+		                headers['If-Match'] = getEtagFromVersion(instance[MobileServiceSystemColumns.Version]);
 		                features.push(WindowsAzure.MobileServiceClient._zumoFeatures.OptimisticConcurrency);
 		            }
 		        }
+		        headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
 		
 		        features = addQueryParametersFeaturesIfApplicable(features, parameters);
 		
-		        parameters = addSystemProperties(parameters, this.systemProperties);
 		        if (!_.isNull(parameters)) {
 		            Validate.isValidParametersObject(parameters);
 		        }
@@ -2016,44 +1879,16 @@
 		// Table system properties
 		function removeSystemProperties(instance) {
 		    var copy = {};
-		    for(var property in instance) {
-		        if (property.substr(0, 2) !== '__') {
+		    for (var property in instance) {
+		        if ((property != MobileServiceSystemColumns.Version) &&
+		            (property != MobileServiceSystemColumns.UpdatedAt) &&
+		            (property != MobileServiceSystemColumns.CreatedAt) &&
+		            (property != MobileServiceSystemColumns.Deleted))
+		        {
 		            copy[property] = instance[property];
 		        }
 		    }
 		    return copy;
-		}
-		
-		function addSystemProperties(parameters, properties, querystring) {
-		    if (properties === MobileServiceSystemProperties.None || (typeof querystring === 'string' && querystring.toLowerCase().indexOf('__systemproperties') >= 0)) {
-		        return parameters;
-		    }
-		
-		    // Initialize an object if none passed in
-		    parameters = parameters || {};
-		
-		    // Don't override system properties if already set
-		    if(!_.isNull(parameters.__systemProperties)) {
-		        return parameters;
-		    }
-		
-		    if (properties === MobileServiceSystemProperties.All) {
-		        parameters.__systemProperties = '*';
-		    } else {
-		        var options = [];
-		        if (MobileServiceSystemProperties.CreatedAt & properties) {
-		            options.push(MobileServiceSystemColumns.CreatedAt);
-		        }
-		        if (MobileServiceSystemProperties.UpdatedAt & properties) {
-		            options.push(MobileServiceSystemColumns.UpdatedAt);
-		        }
-		        if (MobileServiceSystemProperties.Version & properties) {
-		            options.push(MobileServiceSystemColumns.Version);
-		        }
-		        parameters.__systemProperties = options.join(',');
-		    }
-		
-		    return parameters;
 		}
 		
 		// Add double quotes and unescape any internal quotes
@@ -2062,7 +1897,7 @@
 		    if (response.getResponseHeader) {
 		        var eTag = response.getResponseHeader('ETag');
 		        if (!_.isNullOrEmpty(eTag)) {
-		            result.__version = getVersionFromEtag(eTag);
+		            result[MobileServiceSystemColumns.Version] = getVersionFromEtag(eTag);
 		        }
 		    }
 		    return result;
@@ -2128,8 +1963,10 @@
 		var Validate = require('Validate');
 		var Platform = require('Platform');
 		
-		var loginUrl = "login";
+		var loginUrl = ".auth/login";
 		var loginDone = "done";
+		var sessionModeKey = 'session_mode';
+		var sessionModeValueToken = 'token';
 		
 		function MobileServiceLogin(client, ignoreFilters) {
 		    /// <summary>
@@ -2222,7 +2059,7 @@
 		        } else {
 		            Validate.notNull(null, 'callback');
 		        }
-		    }    
+		    }
 		
 		    // loginWithOptions('a.b.c')
 		    if (!options && this._isAuthToken(provider)) {
@@ -2314,7 +2151,7 @@
 		    return value && _.isString(value) && value.split('.').length === 3;
 		};
 		
-		MobileServiceLogin.prototype.loginWithMobileServiceToken = function(authenticationToken, callback) {
+		MobileServiceLogin.prototype.loginWithMobileServiceToken = function (authenticationToken, callback) {
 		    /// <summary>
 		    /// Log a user into a Mobile Services application given an Mobile Service authentication token.
 		    /// </summary>
@@ -2336,12 +2173,12 @@
 		        loginUrl,
 		        { authenticationToken: authenticationToken },
 		        self.ignoreFilters,
-		        function(error, response) { 
+		        function (error, response) {
 		            onLoginResponse(error, response, client, callback);
 		        });
 		};
 		
-		MobileServiceLogin.prototype.loginWithProvider = function(provider, token, useSingleSignOn, parameters, callback) {
+		MobileServiceLogin.prototype.loginWithProvider = function (provider, token, useSingleSignOn, parameters, callback) {
 		    /// <summary>
 		    /// Log a user into a Mobile Services application given a provider name and optional token object.
 		    /// </summary>
@@ -2380,7 +2217,7 @@
 		    }
 		
 		    provider = provider.toLowerCase();
-		    
+		
 		    // Either login with the token or the platform specific login control.
 		    if (!_.isNull(token)) {
 		        loginWithProviderAndToken(this, provider, token, parameters, callback);
@@ -2539,24 +2376,25 @@
 		
 		    var client = login.getMobileServiceClient();
 		    var startUri = _.url.combinePathSegments(
-		        client.gatewayUrl || client.applicationUrl,
-		        loginUrl,
+		        client.alternateLoginHost || client.applicationUrl,
+		        client.loginUriPrefix || loginUrl,
 		        provider);
 		    var endUri = null;
 		
-		    if (!_.isNull(parameters)) {
-		        var queryString = _.url.getQueryString(parameters);
-		        startUri = _.url.combinePathAndQuery(startUri, queryString);
-		    }
+		    parameters = parameters || {};
+		    parameters[sessionModeKey] = sessionModeValueToken;
+		    
+		    var queryString = _.url.getQueryString(parameters);
+		    startUri = _.url.combinePathAndQuery(startUri, queryString);
 		
 		    // If not single sign-on, then we need to construct a non-null end uri.
 		    if (!useSingleSignOn) {
 		        endUri = _.url.combinePathSegments(
-		            client.gatewayUrl || client.applicationUrl,
-		            loginUrl,
+		            client.alternateLoginHost || client.applicationUrl,
+		            client.loginUriPrefix || loginUrl,
 		            loginDone);
 		    }
-		    
+		
 		    login._loginState = { inProcess: true, cancelCallback: null }; // cancelCallback gets set below
 		
 		    // Call the platform to launch the login control, capturing any
@@ -2568,7 +2406,7 @@
 		            login._loginState = { inProcess: false, cancelCallback: null };
 		            onLoginComplete(error, mobileServiceToken, client, callback);
 		        });
-		    
+		
 		    if (login._loginState.inProcess && platformResult && platformResult.cancelCallback) {
 		        login._loginState.cancelCallback = platformResult.cancelCallback;
 		    }
@@ -2650,12 +2488,15 @@
 		    Validate.isString(pushChannel, 'pushChannel');
 		    Validate.notNullOrEmpty(pushChannel, 'pushChannel');
 		
+		    var headers = { 'If-Modified-Since': 'Mon, 27 Mar 1972 00:00:00 GMT' };
+		    headers[WindowsAzure.MobileServiceClient._zumoApiVersionHeaderName] = WindowsAzure.MobileServiceClient._zumoApiVersion;
+		
 		    client._request(
 		        method,
 		        'push/installations/' + encodeURIComponent(installationId),
 		        content,
 		        null,
-		        { 'If-Modified-Since': 'Mon, 27 Mar 1972 00:00:00 GMT' },
+		        headers,
 		        callback
 		    );
 		}
@@ -10377,7 +10218,9 @@
 		    var findProtocol = /^[a-z]+:/,
 		        requiredProtocol = 'https:';
 		    startUri = startUri.replace(findProtocol, requiredProtocol);
-		    endUri = endUri.replace(findProtocol, requiredProtocol);
+		    if (endUri) {
+		        endUri = endUri.replace(findProtocol, requiredProtocol);
+		    }
 		
 		    return getBestProvider(knownLoginUis).login(startUri, endUri, callback);
 		};
@@ -10911,6 +10754,12 @@
 	};
 
 	$__modules__.WebAuthBroker = function (exports) {
+		// ----------------------------------------------------------------------------
+		// Copyright (c) Microsoft Corporation. All rights reserved.
+		// ----------------------------------------------------------------------------
+		
+		var _ = require('Extensions'),
+		    easyAuthRedirectUriKey = 'post_login_redirect_url';
 		
 		exports.supportsCurrentRuntime = function () {
 		    /// <summary>
@@ -10988,36 +10837,39 @@
 		        }
 		    };
 		
+		    // If no endURI was given, we construct the startUri with a redirect parameter 
+		    // pointing to the app SID for single sign on.
+		    // Single sign-on requires that the application's Package SID 
+		    // be registered with the Microsoft Azure Mobile Service, but it provides a better 
+		    // experience as HTTP cookies are supported so that users do not have to
+		    // login in everytime the application is launched.
 		    if (endUri) {
-		        var windowsStartUri = new Windows.Foundation.Uri(startUri);
-		        var windowsEndUri = new Windows.Foundation.Uri(endUri);
-		
-		        // If authenticateAndContinue method is available, we should use it instead of authenticateAsync
-		        if (windowsWebAuthBroker.authenticateAndContinue) {
-		            WinJS.Application.addEventListener('activated', webAuthBrokerContinuationCallback, true);
-		            windowsWebAuthBroker.authenticateAndContinue(windowsStartUri, windowsEndUri);
-		        } else {
-		            windowsWebAuthBroker.authenticateAsync(noneWebAuthOptions, windowsStartUri, windowsEndUri)
-		                                .done(webAuthBrokerSuccessCallback, webAuthBrokerErrorCallback);
-		        }
+		        endUri = new Windows.Foundation.Uri(endUri);
 		    } else {
-		        // If no endURI was given, then we'll use the single sign-on overload of the 
-		        // windowsWebAuthBroker. Single sign-on requires that the application's Package SID 
-		        // be registered with the Microsoft Azure Mobile Service, but it provides a better 
-		        // experience as HTTP cookies are supported so that users do not have to
-		        // login in everytime the application is launched.
-		        var redirectUri = windowsWebAuthBroker.getCurrentApplicationCallbackUri().absoluteUri;
-		        var startUriWithRedirect = startUri + "?sso_end_uri=" + encodeURIComponent(redirectUri);
-		        var windowsStartUriWithRedirect = new Windows.Foundation.Uri(startUriWithRedirect);
+		        var ssoQueryParameter = {},
+		            redirectUri = windowsWebAuthBroker.getCurrentApplicationCallbackUri().absoluteUri;
 		
-		        // If authenticateAndContinue method is available, we should use it instead of authenticateAsync
-		        if (windowsWebAuthBroker.authenticateAndContinue) {
-		            WinJS.Application.addEventListener('activated', webAuthBrokerContinuationCallback, true);
-		            windowsWebAuthBroker.authenticateAndContinue(windowsStartUriWithRedirect);
-		        } else {
-		            windowsWebAuthBroker.authenticateAsync(noneWebAuthOptions, windowsStartUriWithRedirect)
-		                                .done(webAuthBrokerSuccessCallback, webAuthBrokerErrorCallback);
-		        }
+		        ssoQueryParameter[easyAuthRedirectUriKey] = redirectUri;
+		        startUri = _.url.combinePathAndQuery(startUri, _.url.getQueryString(ssoQueryParameter));
+		    }
+		    
+		    startUri = new Windows.Foundation.Uri(startUri);
+		    
+		    // If authenticateAndContinue method is available, we should use it instead of authenticateAsync.
+		    // In the event that it exists, but fails (which is the case with Win 10), we fallback to authenticateAsync.
+		    var isLoginWindowLaunched;
+		    try {
+		        WinJS.Application.addEventListener('activated', webAuthBrokerContinuationCallback, true);
+		        windowsWebAuthBroker.authenticateAndContinue(startUri, endUri);
+		
+		        isLoginWindowLaunched = true;
+		    } catch (ex) {
+		        WinJS.Application.removeEventListener('activated', webAuthBrokerContinuationCallback);
+		    }
+		
+		    if (!isLoginWindowLaunched) {
+		        windowsWebAuthBroker.authenticateAsync(noneWebAuthOptions, startUri, endUri)
+		        .done(webAuthBrokerSuccessCallback, webAuthBrokerErrorCallback);
 		    }
 		};
 		
